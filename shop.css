@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+  
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 42px;
+    line-height: 54px;
+    color: #222;
+}
+h3{
+    font-size: 35px;
+    line-height: 44px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+.header{
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.386);
+    position: fixed;
+    z-index: 999;
+}
+.header #logo{
+    width: 70px;
+    margin-left: 20px;
+    transform: scale(0.8);
+}
+.nav{
+    max-width: 100%;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+} 
+.nav h5{
+    margin-right: 58%;
+    margin-top: 1.15%;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+}
+@keyframes slide-in{
+    0%{margin-left: -15%;}  
+}
+.nav h5:hover{
+    color: #ffca12;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.nav #log::after{
+    content: "";
+    width: 0.2%;
+    height: 25px;
+    background-color: #22222228;
+    position: absolute;
+    top: 10px;
+}
+.nav .tags a{
+    text-decoration: none;
+    color: #222;
+    position: relative; 
+    top: 15px;
+    right: 18%;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+.nav .tags a i{
+    display: flex;
+    position: relative;
+    left: 100%; 
+    bottom: 18px;
+}
+.nav .tags a:hover,
+.nav .tags a.activee {
+    color: #ffca12;
+}
+.nav .tags a.activee::after,
+.nav .tags a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #ffca12;
+    position: absolute;
+    bottom: 4px;
+    left:12px;
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+@keyframes slide{
+    0%{width: 0%;}
+    100%{width:50%}
+}
+.bg-pic{
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.338),rgba(0, 0, 0, 0.338)),url('banner2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif; 
+    
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 42px;
+    line-height: 54px;
+    color: #222;
+}
+h3{
+    font-size: 35px;
+    line-height: 44px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+.header{
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.386);
+    position: fixed;
+    z-index: 999;
+}
+.header #logo{
+    width: 70px;
+    margin-left: 20px;
+    transform: scale(0.8);
+}
+.nav{
+    max-width: 100%;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+} 
+.nav h5{
+    margin-right: 58%;
+    margin-top: 1.15%;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+}
+@keyframes slide-in{
+    0%{margin-left: -15%;}  
+}
+.nav h5:hover{
+    color: #ffca12;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.nav #log::after{
+    content: "";
+    width: 0.2%;
+    height: 25px;
+    background-color: #22222228;
+    position: absolute;
+    top: 10px;
+}
+.nav .tags a{
+    text-decoration: none;
+    color: #222;
+    position: relative; 
+    top: 15px;
+    right: 18%;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+.nav .tags a i{
+    display: flex;
+    position: relative;
+    left: 100%; 
+    bottom: 18px;
+}
+.nav .tags a:hover,
+.nav .tags a.activee {
+    color: #ffca12;
+}
+.nav .tags a.activee::after,
+.nav .tags a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #ffca12;
+    position: absolute;
+    bottom: 4px;
+    left:12px;
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+@keyframes slide{
+    0%{width: 0%;}
+    100%{width:50%}
+}
+.home-page{
+    height: 518px;
+    width: 100%;
+}
+@keyframes fade{
+    from{
+      opacity:0.4;
+    }
+    to{
+      opacity:1;
+    }
+  }
+  
+  body{
+    background:#f5f5f5;
+  }
+  
+  #slider{
+    margin:0 auto;
+    width:100%;
+    overflow:hidden;
+  }
+  
+  .slides{
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1s;
+    display:none;
+  }
+  
+  img{
+    width:100%;
+  }
+  
+  #dot{
+    margin:0 auto;
+    text-align:center;
+  }
+  .dot{
+    display:none;
+    border-radius:50%;
+    background:#d3d3d3;
+    padding:8px;
+    margin:10px 5px;
+  }
+  
+  .active{
+    background:black;
+  }
+  
+  @media (max-width:567px){
+    #slider{
+      width:100%;
+    }
+  }
+.items{
+    background-color: #f9f9f9;
+}
+.items h4{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    text-decoration:wavy;  
+    font-size: 35px; 
+    font-weight: 300;
+}
+.acces{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 60px;
+    background-color: #f9f9f9;
+}
+.realphones:hover{
+    transform: scale(1.05);
+}
+.realphones:not(:hover){
+    transition: 0.5ms;
+}
+.realphones{
+    width: 300px;
+    height: 400px;
+    box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, 0.386);
+    border-radius: 20px;
+    align-items: center;
+}
+.realphones img{
+    width: 300px;
+    height: 300px;
+    margin-top: -5px;
+}
+.realphones a{
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 11px;
+    padding: 10px 45px;
+    background-color: #fcfaed;
+    position: relative;
+    bottom: 45px;
+    left: 72px;
+    color: black;
+    box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, 0.386);
+    border-radius: 50px;
+    font-weight:550 ;
+}
+.realphones p{
+   position: relative;
+   bottom: 45px;
+   left: 15px;
+   color: rgb(239, 15, 15);
+}
+.realphones h3{
+    position: relative;
+    bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+.realphones a:hover{
+box-shadow:0px 2px 7px 0px rgba(0, 0, 0, 0.658);
+}
+.bank{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    
+}
+.bank img{
+    width: 80%;
+   padding: 35px;
+   margin-left: 130px;
+   transition-duration: 0.6s; 
+}
+.bank img:hover{
+    transform: scale(1.05);
+}
+.bank img:not(:hover){
+    transition: 0.5ms;
+}
+.ads{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f5f5;
+}
+.bank h4{
+    text-align: center;
+    font-size: 35px; 
+    font-weight: 300;
+}
+.banner{
+    background-color: #f5f5f5;
+}
+.ban{
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+.ban #a,#b,#c,#d{
+    margin-left: 50px;
+}
+.ban #ab{
+    position: relative;
+    left: 82%;
+    top: 35%;
+    font-size: 500%;
+}
+.ban img{
+    width: 90px;
+    margin-left: 1105px;
+    position: relative;
+    top: 200px;
+    transform: scale(0.8);
+}
+.ban #e{
+    position: relative;
+    left: 84%;
+    top: 45%;
+    font-size: 20px;
+}
+.ban #e span{
+    font-size: 30px;
+    position: relative;
+    bottom: 4px;
+    right: 4px;
+}
+.ban #e #f{
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
+    right: 4px;
+    text-decoration: none;
+}
+.top-deals #top{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 35px; 
+    font-weight: 300;
+}
+.top-deals{
+    display: flex;
+    flex-direction: column;
+
+}
+.dabba{
+    display: flex;
+    width: 80%;
+    height: 50vh;
+    margin-left: 150px;
+    margin-top: 20px;
+    box-shadow:  0px 1px 2px 2px rgba(0, 0, 0, 0.658);
+    border-radius: 10px;
+}
+.matter{
+    margin-top: 5%;   
+    margin-left: 4%;
+    cursor: pointer;
+}
+.matter p{
+    font-weight: 550;
+    color: #000000;
+}
+.matter span{
+    color: red;
+}
+.matter p #ori{
+    color: #000000;
+    text-decoration: line-through;
+}
+.matter a button{
+    padding: 10px;
+    width: 150px;
+    background-color: #ffca12;
+    border-radius: 50px;
+    border: 0.5px solid black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.matter a button:hover{
+    background-color: black;
+    color: white;
+    border: 0.5px solid black;
+}
+.matter i{
+    cursor: pointer;
+}
+.bomma{
+    transform: scale(2);
+   
+}
+footer{
+width: 100%;
+height: 90vh;
+background-color: white;
+margin-top: 3%;
+display: flex;
+flex-direction: column;
+}
+.factors{
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-evenly;
+}
+.boxlu{
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+#last{
+    text-align: center;
+}
+.recom p{
+    font-size: 11px;
+    color: #000000;
+    margin-top: 20px;
+}
+.recom p:hover{
+    color: #ffca12;
+    cursor: pointer;
+}
+#last a{
+    text-decoration: none;
+    border: 0.5px solid black;
+    padding: 12px;
+    color: #000000;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+#last a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.recom #mike{
+position: relative;
+top: -1px;
+}
+.recom i{
+   position: relative;
+   top: 20px;
+   align-self: center;    
+}
